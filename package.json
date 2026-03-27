@@ -1,0 +1,44 @@
+{
+  "name": "mcpforge",
+  "version": "1.0.0",
+  "description": "🔥 Visual MCP Server Builder - Build MCP servers in minutes, not days",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "visual-builder",
+    "drag-and-drop",
+    "no-code",
+    "typescript",
+    "react",
+    "nodejs",
+    "code-generation",
+    "developer-tools",
+    "ai-tools",
+    "claude-desktop"
+  ],
+  "author": "Kim Cedendahl <kim@gracestack.se>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cedendahlkim/mcpforge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cedendahlkim/mcpforge/issues"
+  },
+  "homepage": "https://github.com/cedendahlkim/mcpforge#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
